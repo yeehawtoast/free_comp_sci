@@ -1,60 +1,21 @@
 <!-- app/views/pages/home.html.erb -->
-<div>
-  <nav>
-    Home 
-    <button>All Courses</button>
-    <button> About</button>
-    <button>Community</button>
-    <button>Support Us</button>
-    <button>Contact</button>
-  </nav>
-  <%= link_to 'Sign Up', signup_path, class: 'btn btn-primary' %>
-  <%= link_to 'Log In', login_path, class: 'btn btn-primary' %>
+<div id="home-page">
+  <div>
+    <header>
+      <div>
+        <h1>
+          Your <span>Career in Web Development</span> <span>Starts Here</span>
+        </h1>
+        <div>
+          <p>Our full stack curriculum is free and supported by a passionate open source community.</p>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <%= render 'pages/home/how_it_works' %>
+
+  <%= render 'pages/home/curriculum' %>
+
+  <%= render 'pages/home/success_stories' %>
 </div>
-<div>
-  <h1>A Computer Science Education, For Free</h1>
-  <p>Everything Computer Science Majors learn, open source and free</p>
-  <%= link_to 'Sign Up', signup_path, class: 'btn btn-primary' %>
-  <button>View Courses</button>
-</div>
-<div>
-  <h2>How It Works</h2>
-  <p>Inspired by other Free Code Camps and resources, I wanted to build a site that, like Khan Academy and The Odin Project
-    provides a free education in computer science to anyone who wants it. I never got my degree in computer science because
-    I believed I was not smart enough to get a STEM degree. However, time, practice and experience has taught me that 
-    not only is computer science well within my ability to do, teaching it to others has been a passion of mine since i left the
-    education profession for software development.</p>
-</div>
-<div>
-  <div>
-    Distinct Paths
-  </div>
-  <div>
-    Lesson-based Learning
-  </div>
-  <div>
-    Career-Ready
-  </div>
-  <div>
-    All-inclusive
-  </div>
-  <div>
-    Educator-Ready
-  </div>
-  <button>
-    Explore Curriculum
-  </button>
-</div>
-<footer>
-  <div>
-    <div>
-      Free Computer Science
-    </div>
-    <div>
-      High Quality Code Education maintained by an open source community
-    </div>
-    <div>
-      Socials
-    </div>
-  </div>
-</footer>
