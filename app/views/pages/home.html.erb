@@ -1,13 +1,13 @@
 <!-- app/views/pages/home.html.erb -->
 <div id="home-page">
-  <div>
-    <header>
-      <div>
-        <h1>
-          Your <span>Career in Web Development</span> <span>Starts Here</span>
+  <div class="w-full text-center bg-white dark:bg-gray-900 text-">
+    <header class="page-container pb-4">
+      <div class="max-w-4xl mx-auto sm:pt-16">
+        <h1 class="text-4xl sm:text-6xl text-gray-700 dark:text-gray-200 font-medium mx-auto pb-6 tracking-tighter">
+          A <span class="text-gold-600 dark:text-gold-600">Computer Science Education,</span> <span class="block font-medium">For Free</span>
         </h1>
-        <div>
-          <p>Our full stack curriculum is free and supported by a passionate open source community.</p>
+        <div class="text-gray-600 dark:text-gray-300/80 pb-8 max-w-xl mx-auto">
+          <p class="mb-4 text-xl text-gray-500 dark:text-gray-400">Everything Computer Science Majors learn, open source and free to learn</p>
         </div>
       </div>
     </header>
@@ -16,6 +16,4 @@
   <%= render 'pages/home/how_it_works' %>
 
   <%= render 'pages/home/curriculum' %>
-
-  <%= render 'pages/home/success_stories' %>
 </div>
